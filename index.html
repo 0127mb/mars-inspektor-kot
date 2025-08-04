@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POST Example</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .output {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .output div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 6px solid #4CAF50;
+  }
+
+  .output div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    border-left-color: #2196F3;
+  }
+
+  .output h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  .output p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 16px;
+    word-break: break-word;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+
+  input[type="text"]:focus {
+    border-color: #4CAF50;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  body{background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd/f538c469353173.5b7ebeb00a8da.gif');
+  background-size: 100%;}
+</style>
+
+<body>
+
+  <input type="text" class="inp1" placeholder="Name">
+  <input type="text" class="inp2" placeholder="Password">
+  <button>Post</button>
+  <div class="output"></div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
